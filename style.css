@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+}
+
+.row::after {
+
+    clear: both;
+    display: table;
+  }
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+  }
+  
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+.header{
+    width: 75%;
+    margin: auto;
+    margin-top: 8vh;
+    height: 90px;
+}
+
+.logo-text-container{
+    width: 100%;
+    margin: auto;
+
+    border-top: 2px solid yellow;
+}
+
+
+.logo-text{
+    font-family: "Carter One", cursive;
+    text-align: center;
+    margin-right: 2vh;
+    width: 100%;
+    color: black;
+    font-size: 42px;
+    font-weight: bolder;
+    background-image: linear-gradient(to bottom,white,blue,white,yellow,white,blue,white);
+    border-radius: 5%;
+
+}
+
+
+/*Navbar*/
+
+.nav-link{
+    color: blue;
+
+    font-family: "Nothing You Could Do",cursive;
+    font-size: 18px;
+}
+
+.nav-item{
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    background: white;
+}
+
+.nav-item a:hover{
+    background-image: url(./img/beachBackground.jpeg);
+    color: white;
+    border: black solid 1px;
+}
+.navbar-brand{  
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-left: 50px;
+    font-family: "Nothing You Could Do",cursive;
+    font-weight: bold;
+    background: white;
+}
+
+.material-icons{
+    color: rgb(255, 234, 45);
+    height: 4vh;
+}
+
+/*Food gallerry*/
+
+.food-gallery-container{
+    width: 90%;
+    margin: auto;
+    
+}
+
+.food-gallery{
+    width: 100%;
+    margin: 3px auto;
+    display: grid;
+    grid-template-columns: auto ;
+    grid-template-rows: auto auto;
+    border-top: black 4px solid;
+}
+
+.food{
+    margin: auto;
+    border-right: black 4px solid;
+    border-bottom: black 4px solid;
+    border-left: black 4px solid;
+}
+
+.food1{
+    border-top: black 4px solid;
+}
+
+
+
+/* Ayaka foodSection*/
+
+.foodsection{
+    width: 100%;
+    margin: auto;   
+}
+
+.sale-banner{
+    height: 5vh;
+    width: 100%;
+    background-color: red;
+    position: relative;
+    border-radius: 98%;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    margin: 2px 0px;
+
+}
+.sale-grid{
+    width:100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    border-top: 2px solid black;
+    font-size: 24px;
+}
+
+.sale{
+    width: 100%;
+    font-family: "Nothing You Could Do", cursive;
+    margin: 10px auto;
+    font-weight: bolder;
+    border-bottom: solid 2px black;
+    height: 10vh;
+    text-align: center;
+}
+
+@media only screen and (max-width: 678px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+      width: 100%;
+    }
+  }
